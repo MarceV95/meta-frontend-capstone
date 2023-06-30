@@ -1,7 +1,7 @@
-const Main = () =>{
+const Main = ({children}) =>{
     return(
-        <main>
-            <h1>Main</h1>
+        <main style={{"height":"700px"}}>
+            {children}
         </main>
     )
 }

@@ -1,9 +1,10 @@
 import logo from "../../assets/Logo.svg"
 
-const Header = () =>{
+const Header = ({children}) =>{
     return(
-        <header>
-            <img src={logo} height={75}/>
+        <header className="grid row">
+            <a className="logo-image" href="/#"><img src={logo} /></a>
+            {children}
         </header>
     )
 }
