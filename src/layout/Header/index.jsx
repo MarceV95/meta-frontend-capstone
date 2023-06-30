@@ -1,4 +1,5 @@
 import logo from "../../assets/Logo.svg"
+import "./style.css"
 
 const Header = ({children}) =>{
     return(

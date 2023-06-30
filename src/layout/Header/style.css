@@ -1,0 +1,41 @@
+
+header.grid{
+    grid-template-columns: auto auto;
+    justify-content:space-around;
+    height: 7.68rem;
+  }
+  
+  header .logo-image{
+    align-self: center;
+    line-height: 0;
+  }
+  
+  header .logo-image img{
+    max-width: 15.625rem;
+    width: 13.75rem
+  }
+  
+  
+  .nav-bar, .nav-bar ul, .nav-bar li, .nav-bar a{
+    display: flex;
+  }
+  
+  .nav-bar a{
+    color: #495E57;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    transition: linear 150ms;
+    font-weight: 700;
+  }
+  
+  .nav-bar a:hover{
+    background-color: #F4CE14;
+    transition: linear 150ms;
+  }
+
+
+  @media (max-width: 1024px) {
+    .nav-bar{
+        display: none;
+    }
+  }

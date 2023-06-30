@@ -1,3 +1,5 @@
+import "./style.css"
+
 import logo from "../../assets/logoFooter.png"
 
 import iconFacebook from "../../assets/icons/Facebook.svg"
@@ -5,11 +7,11 @@ import iconInstagram from "../../assets/icons/Instagram.svg"
 import iconTwitter from "../../assets/icons/Twitter.svg"
 import iconYoutube from "../../assets/icons/YouTube-1.svg"
 
-
 const Footer = () =>{
     return(
         <footer >
             <div className="grid row">
+
                 <div className="logo-footer">
                     <a href="/#"><img src={logo}/></a>
                 </div>
@@ -35,9 +37,9 @@ const Footer = () =>{
                     </ul>
                 </div>
 
-                <div>
+                <div className="social-icons">
                     <h3>Our Social Media</h3>
-                    <ul className="social-icons">
+                    <ul >
                         <li>
                             <a href="/#">
                                 <img src={iconFacebook} />

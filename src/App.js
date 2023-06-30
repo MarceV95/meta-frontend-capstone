@@ -1,10 +1,10 @@
 import './App.css';
-import Header from './components/layout/Header';
-import Nav from './components/layout/Nav';
-import Main from './components/layout/Main';
-import Footer from './components/layout/Footer';
+import Header from './layout/Header';
+import Nav from './layout/Nav';
+import Main from './layout/Main';
+import Footer from './layout/Footer';
 
-import Home from './components/pages/Home';
+import Home from './pages/Home';
 
 function App() {
   return (

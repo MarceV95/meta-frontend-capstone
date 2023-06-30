@@ -6,11 +6,17 @@
   margin: 0;
   padding: 0;
 }
+
 .row{
   max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
 }
+
+.grid{
+  display: grid;
+}
+
 /*Typography*/
 body{
   font-family: 'Karla', sans-serif;
@@ -56,81 +62,3 @@ ul{
   list-style: none;
 }
 /**/
-
-.grid{
-  display: grid;
-}
-
-header.grid{
-  grid-template-columns: auto auto;
-  justify-content:space-around;
-  height: 7.68rem;
-}
-
-header .logo-image{
-  align-self: center;
-  line-height: 0;
-}
-
-header .logo-image img{
-  max-width: 15.625rem;
-  width: 13.75rem
-}
-
-
-.nav-bar, .nav-bar ul, .nav-bar li, .nav-bar a{
-  display: flex;
-}
-
-.nav-bar a{
-  color: #495E57;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  transition: linear 150ms;
-  font-weight: 700;
-}
-
-.nav-bar a:hover{
-  background-color: #F4CE14;
-  transition: linear 150ms;
-}
-
-footer{
-  color: white;
-  background-color: #495E57;
-  padding: 3rem 0 2rem 0;
-}
-
-
-footer .row{
-  grid-template-columns: auto auto auto auto ;
-  justify-content:space-evenly;
-}
-
-footer .logo-footer {
-  align-self: center;
-}
-
-footer .logo-footer img{
-  height: 11.25rem;
-}
-
-footer .social-icons{
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-footer .social-icons img{
-  width: 2.188rem;
-}
-
-footer h3{
-  letter-spacing: .15rem;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-footer li{
-  padding: 0rem 0 0.5rem 0;
-}
