@@ -4,10 +4,9 @@ background-color: #495E57;
 padding: 3rem 0 2rem 0;
 }
 
-
 footer .row{
 grid-template-columns: auto auto auto auto ;
-justify-content:space-evenly;
+justify-content: space-between;
 }
 
 footer .logo-footer {
@@ -35,8 +34,16 @@ margin-bottom: 1rem;
 }
 
 footer li{
-    padding: 0rem 0 0.5rem 0;
+    padding: 0rem 0 0.6rem 0;
 }
+
+footer .contact li{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    
+}
+
 
 @media (max-width: 1024px) {
     footer .row{
@@ -65,5 +72,8 @@ footer li{
         grid-template-columns: auto;
         text-align: center;
         grid-row-gap: 35px;
+    }
+    footer .contact li{
+        justify-content: center;
     }
 }

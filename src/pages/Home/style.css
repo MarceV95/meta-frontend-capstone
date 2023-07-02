@@ -1,0 +1,305 @@
+#hero{
+    background-color: #495E57;
+    padding: 3rem 0 3rem 0;
+    margin-bottom: 4.5rem;
+}
+
+#hero .grid{
+    grid-template-columns: 350px 350px;
+    justify-content: space-between;
+}
+
+#hero h1{
+    color: #F4CE14;
+    line-height: 0.8em;
+}
+
+#hero h2{
+    color: white;
+    line-height: 0.8em;
+}
+
+#hero p{
+    color: white;
+    font-size: 1.125rem;
+    padding: 1.125rem 0;
+}
+
+.hero-image{
+    position: relative;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 390px;
+    object-fit:cover;
+    position: absolute;
+    border-radius: 1rem;
+}
+
+
+#specials{
+    padding-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
+#specials>div{
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-container{
+    margin-top: 3rem;
+    grid-template-columns: 20rem 20rem 20rem;
+    justify-content: space-between;
+}
+
+.card-container article{ 
+    background-color: #EDEFEE;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative;
+    height: 460px;
+}
+
+.card-container img{
+    width: 100%;
+    height: 11.6rem;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-title h2{
+    font-size: 2em;
+}
+
+.card-title span{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #EE9972;
+}
+
+.card-body{
+    text-align: justify;
+    padding: 1rem 1.75rem 1rem 1.75rem;
+}
+
+.card-order a{
+    position: absolute;
+    bottom: 0.750rem;
+    left: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.750rem;
+    transition: 150ms;
+}
+
+.card-order a:hover {
+    color: #F4CE14;
+    transition: 150ms;
+}
+
+#testimonials{
+    background-color: #333333;
+    color: white;
+    padding: 4rem 0 5rem 0;
+}
+
+#testimonials h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials-container{
+    grid-template-columns: repeat(4,14.5rem)  ;
+    justify-content:space-around;
+}
+
+.testimonials-container article{
+    background-color: #EDEFEE;
+    color: black;
+    border-radius: .5rem;
+    padding: 0.75rem 0.4rem;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.card-image{
+    position: absolute;
+    top: -50px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 5px solid #EDEFEE;
+    
+}
+
+.testimonials-container article h3{
+    margin-top: 55px;
+}
+
+.card-rating{
+    color: #F4CE14;
+}
+
+
+#about{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    grid-template-columns: 40% 50%;
+    justify-content: space-around;
+}
+
+#about h1{
+    color: #F4CE14;
+    line-height: 0.8em;
+    margin-top: auto;
+}
+
+#about h2{
+    line-height: 0.8em;
+}
+
+#about p{
+    padding-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: auto;
+}
+
+#about article{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+#about .photo {
+    position: relative;
+}
+
+
+#about .photo img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 10px solid white;
+    border-bottom: 70px solid white;
+    box-shadow: 0px 5px 10px 2px rgb(0,0,0,0.2);
+}
+
+#about .photo > .image1{
+    position: absolute;
+    top:-50px;
+    right: 0;
+    transform: rotate(20deg);
+}
+
+#about .photo > .image2{
+    z-index: 10;
+    transform: rotate(-18deg);
+    object-position: -100px ;
+}
+
+@media (max-width: 1024px) {
+    .card-container{
+        grid-template-columns: repeat(2, 20rem);
+        justify-content: space-evenly;
+        row-gap: 3rem;
+    }
+
+    .testimonials-container{
+        grid-template-columns: repeat(2, auto)  ;
+        row-gap: 3rem;
+        column-gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container{
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        row-gap: 3rem;
+    }
+    .card-container article{
+        height: fit-content;
+    }
+
+    .card-order a{
+        position: relative;
+        padding: 1rem 0 1rem 0;
+    }
+
+   
+    #hero .grid{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    #hero .grid > .hero-text {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    #hero img{
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    #specials>div{
+        grid-template-columns: auto;
+        text-align: center;
+        row-gap: 2rem;
+    }
+    .testimonials-container{
+        grid-template-columns: auto  ;
+    }
+
+    #about{
+        grid-template-columns: auto;
+    }
+    #about h1, #about h2, #about p{
+        text-align: center;
+    }
+
+
+    #about .photo{
+        text-align: center;
+        width: 100%;
+    }
+
+    #about .photo img{
+        margin-top: 4rem;
+        width: 99%;
+        max-width: 350px;
+        height: auto;
+        border: 2px solid white;
+        border-bottom: 50px solid white;
+    }
+
+    #about .photo > .image1{
+        position: relative;
+        top:0;
+        transform: rotate(0);
+    }
+
+    #about .photo > .image2{
+        transform: rotate(-0);
+        object-position: 0;
+        
+    }
+}

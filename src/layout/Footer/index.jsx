@@ -1,7 +1,10 @@
+
 import "./style.css"
 
-import logo from "../../assets/logoFooter.png"
+import {FaLocationDot, FaPhone, FaEnvelope} from "react-icons/fa6"
+import { Link } from "react-router-dom"
 
+import logo from "../../assets/logoFooter.png"
 import iconFacebook from "../../assets/icons/Facebook.svg"
 import iconInstagram from "../../assets/icons/Instagram.svg"
 import iconTwitter from "../../assets/icons/Twitter.svg"
@@ -13,27 +16,27 @@ const Footer = () =>{
             <div className="grid row">
 
                 <div className="logo-footer">
-                    <a href="/#"><img src={logo}/></a>
+                    <Link to="/#"><img src={logo} alt="Little Lemon's Logo"/></Link>
                 </div>
 
                 <div>
                     <h3>Navigation</h3>
                     <ul>
-                        <li><a href="/#">Home</a></li>
-                        <li><a href="/#">About</a></li>
-                        <li><a href="/#">Menu</a></li>
-                        <li><a href="/#">Reservations</a></li>
-                        <li><a href="/#">Order Online</a></li>
-                        <li><a href="/#">Login</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/#">About</Link></li>
+                        <li><Link to="/#">Menu</Link></li>
+                        <li><Link to="/reservation">Reservations</Link></li>
+                        <li><Link to="/#">Order Online</Link></li>
+                        <li><Link to="/#">Login</Link></li>
                     </ul>
                 </div>
 
-                <div>
+                <div className="contact">
                     <h3>Contact</h3>
                     <ul>
-                        <li>678 Pisa Ave, Chicago, IL 60611</li>
-                        <li>(312) 593-2744</li>
-                        <li>customer@littlelemon.com</li>
+                        <li><FaLocationDot />Chicago, Illinois</li>
+                        <li><FaPhone />(123) 456-7890</li>
+                        <li><FaEnvelope/>service@littlelemon.com</li>
                     </ul>
                 </div>
 
@@ -41,24 +44,24 @@ const Footer = () =>{
                     <h3>Our Social Media</h3>
                     <ul >
                         <li>
-                            <a href="/#">
-                                <img src={iconFacebook} />
-                            </a>
+                            <Link to="/#">
+                                <img src={iconFacebook} alt="Facebook Icon"/>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/">
-                                <img src={iconInstagram} />
-                            </a>
+                            <Link to="/">
+                                <img src={iconInstagram} alt="Instagram Icon"/>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/#">
-                                <img src={iconTwitter} />
-                            </a>
+                            <Link to="/#">
+                                <img src={iconTwitter} alt="Twitter Icon"/>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/#">
-                                <img src={iconYoutube} />
-                            </a>
+                            <Link to="/#">
+                                <img src={iconYoutube} alt="Youtube Icon"/>
+                            </Link>
                         </li>
                     </ul>
                 </div>

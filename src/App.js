@@ -1,10 +1,9 @@
 import './App.css';
+
 import Header from './layout/Header';
 import Nav from './layout/Nav';
-import Main from './layout/Main';
 import Footer from './layout/Footer';
-
-import Home from './pages/Home';
+import Main from './layout/Main';
 
 function App() {
   return (
@@ -12,9 +11,7 @@ function App() {
       <Header>
         <Nav />
       </Header>
-      <Main>
-        <Home />
-      </Main>
+      <Main/>
       <Footer />
     </>
   );

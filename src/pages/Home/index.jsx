@@ -1,7 +1,17 @@
+import "./style.css"
+
+import Specials from "./specials"
+import Hero from "./hero"
+import Testimonials from "./testimonials"
+import About from "./about"
+
 const Home = () =>{
     return(
         <>
-            <h1>Sup</h1>
+            <Hero />
+            <Specials />
+            <Testimonials />
+            <About />
         </>
     )
 }
